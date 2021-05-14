@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">DEMO</string>
+    <string-array name="array_of_colours">
+        <item>
+            red
+        </item>
+        <item>
+            green
+        </item>
+        <item>
+            blue
+        </item>
+        <item>
+            yellow
+        </item>
+    </string-array>
 </resources>
