@@ -9,6 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.DEMO">
+        <activity android:name=".QuizActivity"></activity>
+        <activity android:name=".Quiz">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity android:name=".MainActivity7">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -44,7 +52,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Main4Activity">
+        <activity android:name=".MainActivity4">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

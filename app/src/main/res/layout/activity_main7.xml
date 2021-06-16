@@ -7,126 +7,115 @@
     tools:context=".MainActivity7">
 
     <androidx.gridlayout.widget.GridLayout
-        android:layout_width="384dp"
-        android:layout_height="419dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="112dp"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="188dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginBottom="193dp"
         android:background="@drawable/board"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:rowCount="3"
+        app:columnCount="3"
+        >
 
         <ImageView
             android:id="@+id/imageView1"
-            android:layout_width="101dp"
-            android:layout_height="110dp"
+            android:layout_width="108dp"
+            android:layout_height="100dp"
             android:layout_margin="10dp"
-            android:layout_marginLeft="10dp"
-            app:layout_column="0"
-            app:layout_row="0"
-            android:tag="0"
             android:onClick="coinAppear"
-            />
+            android:tag="0"
+            app:layout_column="0"
+            app:layout_row="0" />
+
         <ImageView
             android:id="@+id/imageView2"
-            android:layout_width="101dp"
-            android:layout_height="110dp"
+            android:layout_width="108dp"
+            android:layout_height="100dp"
             android:layout_margin="10dp"
-            android:layout_marginLeft="15dp"
-            android:layout_marginRight="10dp"
+            android:layout_marginLeft="-6dp"
             app:layout_column="1"
             app:layout_row="0"
-            android:tag="1"
             android:onClick="coinAppear"
+            android:tag="1"
             />
 
         <ImageView
             android:id="@+id/imageView3"
-            android:layout_width="101dp"
-            android:layout_height="110dp"
+            android:layout_width="108dp"
+            android:layout_height="100dp"
             android:layout_margin="10dp"
-            android:layout_marginLeft="20dp"
-            app:layout_column="2"
-            app:layout_row="0"
-            android:tag="2"
+            android:layout_marginLeft="0dp"
             android:onClick="coinAppear"
+            android:tag="2"
             />
 
         <ImageView
             android:id="@+id/imageView4"
-            android:layout_width="101dp"
-            android:layout_height="110dp"
+            android:layout_width="108dp"
+            android:layout_height="100dp"
             android:layout_margin="10dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="20dp"
-            app:layout_column="0"
-            app:layout_row="1"
-            android:tag="3"
             android:onClick="coinAppear"
+            android:tag="3"
+
             />
 
         <ImageView
             android:id="@+id/imageView5"
-            android:layout_width="101dp"
-            android:layout_height="110dp"
+            android:layout_width="108dp"
+            android:layout_height="100dp"
             android:layout_margin="10dp"
-            android:layout_marginLeft="15dp"
-            android:layout_marginTop="20dp"
-            app:layout_column="1"
-            app:layout_row="1"
-            android:tag="4"
+            android:layout_marginLeft="-6dp"
             android:onClick="coinAppear"
+            android:tag="4"
+
             />
 
         <ImageView
             android:id="@+id/imageView6"
-            android:layout_width="101dp"
-            android:layout_height="110dp"
+            android:layout_width="108dp"
+            android:layout_height="100dp"
             android:layout_margin="10dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="20dp"
-            app:layout_column="2"
-            app:layout_row="1"
-            android:tag="5"
+            android:layout_marginLeft="0dp"
             android:onClick="coinAppear"
+            android:tag="5"
             />
 
         <ImageView
             android:id="@+id/imageView7"
-            android:layout_width="101dp"
-            android:layout_height="110dp"
+            android:layout_width="108dp"
+            android:layout_height="100dp"
             android:layout_margin="10dp"
-            android:layout_marginLeft="18dp"
-            android:layout_marginTop="20dp"
-            app:layout_column="2"
-            app:layout_row="2"
-            android:tag="8"
             android:onClick="coinAppear"
+            android:tag="6"
             />
 
         <ImageView
             android:id="@+id/imageView8"
-            android:layout_width="101dp"
-            android:layout_height="110dp"
+            android:layout_width="108dp"
+            android:layout_height="100dp"
             android:layout_margin="10dp"
-            android:layout_marginLeft="15dp"
-            android:layout_marginTop="20dp"
-            app:layout_column="1"
-            app:layout_row="2"
-            android:tag="7"
+            android:layout_marginLeft="-6dp"
             android:onClick="coinAppear"
+            android:tag="7"
+
             />
 
         <ImageView
             android:id="@+id/imageView9"
-            android:layout_width="101dp"
-            android:layout_height="110dp"
+            android:layout_width="108dp"
+            android:layout_height="100dp"
             android:layout_margin="10dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="20dp"
-            app:layout_column="0"
-            app:layout_row="2"
-            android:tag="6"
+            android:layout_marginLeft="0dp"
             android:onClick="coinAppear"
+            android:tag="8"
             />
+
+
+
     </androidx.gridlayout.widget.GridLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
