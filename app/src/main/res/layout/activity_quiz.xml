@@ -1,65 +1,121 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#689569"
-    tools:context=".Quiz">
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="171dp"
-        android:layout_height="53dp"
-        android:layout_marginStart="105dp"
-        android:layout_marginTop="129dp"
-        android:gravity="center"
-        android:text="Sonet Quiz"
-        android:textColorLink="#1956BD"
-        android:textSize="34sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <androidx.cardview.widget.CardView
-        android:layout_width="306dp"
-        android:layout_height="136dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="384dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginBottom="311dp"
-        app:cardCornerRadius="8dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
+    tools:context=".QuizActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:padding="20dp">
+            <ProgressBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style = "@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:maxHeight="50dp"
+                android:max="10"
+                android:progress="4">
+
+            </ProgressBar>
 
             <TextView
-                android:id="@+id/textView2"
+                android:id="@+id/q_question"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:text="Enter name" />
-
-            <EditText
-                android:id="@+id/quiz_name"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:inputType="textPersonName"
-                android:text="Name" />
-
-            <Button
-                android:id="@+id/quiz_btn"
-                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:gravity="center"
-                android:text="Start" />
+                android:layout_margin="10dp"
+                android:padding="20dp"
+                android:text="What is JVM?"
+                android:textSize="25sp">
+
+            </TextView>
         </LinearLayout>
-    </androidx.cardview.widget.CardView>
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:id="@+id/option_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Apple is a company"
+                android:textSize="22sp"
+                android:textColor="#0F158E"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:padding="15dp"
+                android:background="@drawable/default_options_border_bg">
+            </TextView>
+            <TextView
+                android:id="@+id/option_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Apple is a company"
+                android:textSize="22sp"
+                android:textColor="#0F158E"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:padding="15dp"
+                android:background="@drawable/default_options_border_bg">
+            </TextView>
+            <TextView
+                android:id="@+id/option_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Apple is a company"
+                android:textSize="22sp"
+                android:textColor="#0F158E"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:padding="15dp"
+                android:background="@drawable/default_options_border_bg">
+            </TextView>
+            <TextView
+                android:id="@+id/option_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Apple is a company"
+                android:textSize="22sp"
+                android:textColor="#0F158E"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:padding="15dp"
+                android:background="@drawable/default_options_border_bg">
+            </TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+            <Button
+                android:id="@+id/quibtn1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="END"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_weight="1">
+
+            </Button>
+            <Button
+                android:id="@+id/quibtn2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NEXT"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_weight="1">
+
+            </Button>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

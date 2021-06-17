@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DEMO">
         <activity android:name=".QuizActivity"></activity>
-        <activity android:name=".Quiz">
+        <activity android:name=".SonetQuiz">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
