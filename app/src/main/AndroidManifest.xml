@@ -12,7 +12,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.DEMO">
-        <activity android:name=".NoteTakingScreen3Activity"></activity>
+        <activity android:name=".Screen3"></activity>
+        <activity android:name=".Screen2" />
+        <activity android:name=".College_Management_App">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".NoteTakingScreen3Activity" />
         <activity android:name=".NoteTakingScreen2Activity" />
         <activity
             android:name=".NoteTakingActivity"
