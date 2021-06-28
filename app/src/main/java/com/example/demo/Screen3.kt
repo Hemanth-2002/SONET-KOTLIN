@@ -28,6 +28,10 @@ class Screen3 : AppCompatActivity() {
             val intent = Intent(this,College_Management_App::class.java)
             startActivity(intent)
         }
-
+        classesList.setOnItemClickListener { parent, view, position, id ->
+            val intent = Intent(this,Screen4()::class.java)
+            intent.putExtra("name",position)
+            startActivity(intent)
+        }
     }
 }
