@@ -1,13 +1,12 @@
 package com.example.demo
+import androidx.room.Entity
+import androidx.room.PrimaryKey
 
-import android.arch.persistence.room.Entity
-import android.arch.persistence.room.PrimaryKey
-
-@Entity
+@Entity(tableName = "user_table")
 data class User(
     @PrimaryKey(autoGenerate = true)
     var id:Int,
     var firstName:String,
     var lastName:String,
     var age:Int
-    )
+)
